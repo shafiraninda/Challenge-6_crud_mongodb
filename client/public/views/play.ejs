@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Stylesheet CSS-->
+    <link href="/css/playStylesheet.css" rel="stylesheet">
+
+    <script src="/js/index.js"></script>
+    
+    <title><%= pageTitle %> </title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container-fluid justify-content-start">
+            <a href="/home/<%- user %> " class="prev me-sm-4 ms-sm-3"><</a>
+            <a href="#" class="navbar-brand me-sm-4">
+                <img src="assets/logo.png" alt="">
+            </a>
+            <h1 class="ms-sm-2">ROCK PAPER SCISSORS</h1>
+        </div>
+    </nav>
+    <div class="line1 row container-fluid justify-content-sm-center mt-sm-4 mb-sm-3">
+        <div class="col-sm-4"><h1 class="mw-100 justify-content-sm-center d-sm-flex"><%- user %> </h1></div>
+        <div class="col-sm-3"></div>
+        <div class="col-sm-4"><h1 class="mw-100 justify-content-sm-center d-sm-flex">COM</h1></div>
+    </div>
+    <div class="line row container-fluid justify-content-sm-center my-sm-3">
+        <div  class="col-sm-4 d-sm-flex justify-content-center" id="batu" onclick="chooseThis(this)"><img src="assets/batu.png"></div>
+        <div class="col-sm-3"></div>
+        <div id="batu2" class="col-sm-4 d-sm-flex justify-content-center"><img src="assets/batu.png" alt=""></div>
+    </div>
+    <div class="line row container-fluid justify-content-sm-center mt-sm-5">
+        <div id="kertas" class="col-sm-4 d-sm-flex justify-content-center" onclick="chooseThis(this)"><img src="assets/kertas.png" alt=""></div>
+        <div class="col-sm-3"></div>
+        <div id="kertas2" class="col-sm-4 d-sm-flex justify-content-center"><img src="assets/kertas.png" alt=""></div>
+    </div>
+    <div class="line row container-fluid justify-content-sm-center mt-sm-5">
+        <div id="gunting" class="col-sm-4 d-sm-flex justify-content-center" onclick="chooseThis(this)"><img src="assets/gunting.png" alt=""></div>
+        <div class="col-sm-3"></div>
+        <div id="gunting2" class="col-sm-4 d-sm-flex justify-content-center"><img src="assets/gunting.png" alt=""></div>
+    </div>
+    <div class="text-decoration-none justify-content-sm-center d-sm-flex line3" id="result">
+        <h2 id="middle">VS</h2>
+    </div>
+     
+    <form action="/play/<%= user %>" method="GET">
+        <button class="btn btn-primary container col-sm-2 mt-sm-3 d-sm-flex justify-content-center">
+          Record Your Game Result
+        </button>
+    </form>
+    <a class="refresh container col-sm-11 d-sm-flex justify-content-center mt-sm-5" href="/play"><img src="assets/refresh.png" alt=""></a>
+</body>
+</html>

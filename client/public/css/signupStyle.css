@@ -1,0 +1,22 @@
+.container-fluid{
+    padding: 1% 20%;
+}
+body{
+    background-color: black;
+    color:white;
+    position: relative;
+    display: block;
+}
+.mainbutton {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight:bold;
+    color:black;
+    text-decoration:none;
+}
+.btn {
+    background:linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+    font-size:13px;
+    width:250px;
+    height:60px;   
+}

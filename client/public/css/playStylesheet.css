@@ -1,0 +1,74 @@
+body{
+    background: #9C835F;
+    min-height: 100%;
+}
+.suit{
+    background-image: url("../assets/kotak.png");
+    background-size: 223px 204px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.result{
+    background: #4C9654;
+    border-radius: 10px;
+    transform: rotate(-28.87deg);
+    width: 271.11px;
+    height: 166.93px;
+    line-height: normal!important;
+    padding-top: 3%;
+}
+.prev{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #724C21;
+    text-decoration: none;
+}
+.navbar h1{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    color: #F9B23D;
+}
+.line1 h1{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+}
+.line img{
+    width: 128px;
+    height: 200px;
+    align-self: center;
+}
+.line {
+    height: 204px;
+}
+.line3 h2{
+    position: absolute;
+    bottom: 0;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 144px;
+    line-height: 196px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #BD0000;
+}
+.refresh img{
+    width: 77px;
+    height: 71px;
+}

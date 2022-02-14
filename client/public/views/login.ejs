@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partial/head')  %> 
+<body>
+    <div class="container-fluid">
+        <h2 class="text-center">Sign Up</h1>
+    </div>
+    <div class="container-fluid">
+        <form action="/login" method="POST">
+            <div class="mb-3">
+              <label for="exampleInputName" class="form-label">Username</label>
+              <input type="username" class="form-control" id="exampleInputName" name="username" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" name="password" required>
+            </div>
+              <% if (status === 'usernotfound') { %>
+                <%- include('partial/user-not-found') %>
+                <% } else if (status === 'wrongpassword' ) { %>
+                <%- include('partial/wrong-password') %>
+                <% } %>
+            <button type="submit" class="btn mt-5 py-3 text-center" href="#">
+                <a class="mainbutton">LOGIN</a>
+              </button>
+          </form>
+    </div>
+</body>
+<%- include('partial/footer')  %> 
+</html>
